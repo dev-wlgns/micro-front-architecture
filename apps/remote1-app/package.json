@@ -1,0 +1,10 @@
+{
+  "name": "remote1-app",
+  "version": "1.0.0",
+  "devDependencies": {},
+  "scripts": {
+    "start": "webpack --mode development --watch --devtool inline-source-map",
+    "start:dev": "webpack serve  --mode development --devtool inline-source-map --hot",
+    "build": "webpack --mode production"
+  }
+}
