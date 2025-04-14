@@ -3,15 +3,12 @@
   "packageManager": "pnpm@10.8.0",
   "private": true,
   "devDependencies": {
-    "@module-federation/typescript": "^3.1.3",
     "@types/react": "^19.1.1",
     "@types/react-dom": "^19.1.2",
     "axios": "^1.8.4",
-    "clean-webpack-plugin": "^4.0.0",
     "esbuild-loader": "^4.3.0",
     "fork-ts-checker-webpack-plugin": "^9.1.0",
     "html-webpack-plugin": "^5.6.3",
-    "turbo": "^2.5.0",
     "typescript": "^4.9.5",
     "webpack": "^5.99.5",
     "webpack-cli": "^6.0.1",
@@ -19,11 +16,9 @@
   },
   "scripts": {
     "start:dev": "pnpm --parallel run start:dev",
-
     "start:dev:host-app": "pnpm --filter host-app start:dev",
     "start:dev:remote1-app": "pnpm --filter remote1-app start:dev",
     "start:dev:remote2-app": "pnpm --filter remote2-app start:dev",
-
     "build:host-app": "pnpm --filter host-app build",
     "build:remote1-app": "pnpm --filter remote1-app build",
     "build:remote2-app": "pnpm --filter remote2-app build"
@@ -31,6 +26,6 @@
   "dependencies": {
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "react-router-dom": "^7.5.0"
+    "react-router": "^7.5.0"
   }
 }
